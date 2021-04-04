@@ -1,0 +1,170 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #f5f5f5;
+}
+*{
+    margin: 0.5;
+    padding: 0;
+}
+header {
+    background-color: lightblue;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    padding: 0 1.25rem;
+}
+
+li a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.nav-toggle{
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+.open{
+    height: 100vh;
+}
+
+/* menu */
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+/* end menu */
+
+@media all and (max-width: 720px) {
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav{
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: 250ms height ease-in-out;
+    }
+    
+    li{
+        display: block;
+        text-align: center;
+        padding: 1.5rem 0;
+    }
+
+    li a{
+        font-size: 1.4rem;
+    }
+
+    .nav-toggle{
+        display: block;;
+    }
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: dodgerblue;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+/* FOR  GO TO TOP BUTTON */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: dodgerblue; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+  
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
