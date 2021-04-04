@@ -40,7 +40,11 @@
             </nav>
         </div>
     </header>
-    
+    <div class='flx'>
+        <div class='demoScroll sc2'>
+            <div class='h800'></div>
+        </div>
+    </div>
     <script src="../js/up_btn.js"></script>
     <script src="../js/main.js"></script>
 </body>
