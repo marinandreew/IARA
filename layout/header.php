@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ИАРА</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/hamburgerMenu.css">
+    <link rel="stylesheet" type="text/css" href="../css/preLoader.css">
+    <link rel="stylesheet" type="text/css" href="../css/up_btn.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../images/iara-logo.png">
-    <link rel="stylesheet" href="../css/up_btn.css" />
 </head>
 <body>
+<section>
+    <div class="preload">
+        <img src="../images/ship.png" alt="ship" style='width: auto; height: 280px;'>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </div>
+</section>
     <header>
         <div class="container">
             <div>
@@ -40,11 +52,8 @@
             </nav>
         </div>
     </header>
-    <div class='flx'>
-        <div class='demoScroll sc2'>
-            <div class='h800'></div>
-        </div>
-    </div>
+    <script src="../js/preload.js"></script>
     <script src="../js/up_btn.js"></script>
     <script src="../js/main.js"></script>
 </body>
+<?php ?>
