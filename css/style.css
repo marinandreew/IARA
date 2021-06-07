@@ -118,3 +118,76 @@ body::-webkit-scrollbar {
     background-color: rgb(158, 158, 158);
     border-radius: 10px;
 }
+
+
+/* loginbox */
+
+.loginbox{
+    width: auto;
+	background: #1f1e20;
+	align-items: stretch;
+	flex: 0 0 200px;
+    color: #fff;
+    top: 50%;
+	left: 50%;
+    position: fixed;
+	transform: translate(-50%, -50%);
+	flex-grow: auto;
+    box-sizing: border-box;
+    padding: 70px 70px;
+    border-radius: 20px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+	margin-bottom: 20px;
+	
+}
+.loginbox input[type="text"], input[type="password"], input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+	width: 360px;
+    color: #fff;
+    font-size: 16px;   
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 60px;
+	width: 200px;
+    background: #557A95;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #379683;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
