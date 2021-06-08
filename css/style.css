@@ -94,7 +94,7 @@ li a{
     content: '';
     width: 0%;
     height: 2px;
-    background: dodgerblue;
+    background: #1e90ff;
     display: block;
     margin: auto;
     transition: 0.3s;
